@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о пользователе</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <form action="" method="GET" id="form">
+        <label for="first-name" class="label">Введите имя<br/>
+            <input type="text" name="first-name" id="first-name">
+        </label>
+        <label for="last-name" class="label">Введите фамилию<br/>
+            <input type="text" name="last-name" id="last-name">
+        </label>
+        <label for="birthday" class="label">Введите дату рождения<br/>
+            <input type="date" name="birthday" id="birthday">
+        </label>
+        <label for="gender" class="label">Ваш пол:
+            <input type="radio" name="gender" id="male" checked/> М
+            <input type="radio" name="gender" id="female"/> Ж
+        </label>
+        <label for="country" class="label">Выберите страну<br/>
+            <select name="country" id="country">
+                <option value="" checked></option>
+                <option value="Russia">Russia</option>
+                <option value="USA">USA</option>
+                <option value="England">England</option>
+            </select>
+        </label>
+        <label for="town" class="label">Выберите город<br/>
+            <select name="town" id="town">
+                <option value="" checked></option>
+                <option value="Washington">Washington</option>
+                <option value="Moscow">Moscow</option>
+                <option value="London">London</option>
+            </select>
+        </label>
+        <label for="skills" class="skills">Навыки:
+            <input type="checkbox" name="skills" id="html"> <span>HTML</span>
+            <input type="checkbox" name="skills" id="css"> <span>CSS</span>
+            <input type="checkbox" name="skills" id="js"> <span>JS</span>
+            <input type="checkbox" name="skills" id="php"> <span>PHP</span>
+            <input type="checkbox" name="skills" id="C-plus"> <span>C++</span>
+            <input type="checkbox" name="skills" id="JAVA"> <span>Java</span>
+            <input type="checkbox" name="skills" id="C"> <span>C#</span>
+        </label>
+        <input type="submit" value="Сохранить" id="btn-save">
+    </form>
+    <div class="result-text">
+        <table id="table">
+            
+        </table>
+    </div>
+    <script src="JS/main3.js"></script>
+</body>
+</html>
